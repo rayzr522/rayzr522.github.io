@@ -89,7 +89,7 @@ a {
     display: inline-block;
     padding: 20px;
     width: 350px;
-    margin: 0 20px;
+    margin: 10px 20px;
 
     a {
       font-size: 30px;
