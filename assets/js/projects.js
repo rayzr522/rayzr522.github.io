@@ -43,7 +43,7 @@ const PROJECTS = [
 
 function makeProject(data) {
     var column = document.createElement('div');
-    column.classList.add('column');
+    column.classList.add('col');
 
     var box = document.createElement('div');
     box.classList.add('box');
@@ -72,7 +72,7 @@ function makeAllProjects() {
         var chunk = projects.splice(0, 4);
 
         var columns = document.createElement('div');
-        columns.classList.add('columns', 'align-column');
+        columns.classList.add('col', 'align-column');
 
         for (var i = 0; i < chunk.length; i++) {
             var project = makeProject(chunk[i]);
@@ -84,5 +84,5 @@ function makeAllProjects() {
 }
 
 window.addEventListener('load', function () {
-    makeAllProjects();
+    // makeAllProjects();
 });

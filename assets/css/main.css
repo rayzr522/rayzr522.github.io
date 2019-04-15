@@ -1,0 +1,129 @@
+html {
+    background: black;
+    color: white;
+
+    font-family: 'Lato', 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2em;
+
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0.5em;
+}
+
+h1 {
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.title {
+    font-size: 3em;
+    font-weight: 300;
+}
+
+p {
+    text-align: justify;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-bottom: 3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    border: 0.5px solid white;
+    margin: 2em auto;
+}
+
+.navbar-item {
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0.4em;
+}
+
+.navbar-dropdown {
+    display: none;
+    position: absolute;
+
+    top: 0em;
+    padding: 0em;
+
+    background: black;
+    border: 1px solid white;
+    border-radius: 0.1em;
+}
+
+.navbar-item:hover .navbar-dropdown {
+    display: block;
+    top: 2.75em;
+}
+
+.navbar-dropdown .navbar-dropdown-item {
+    display: block;
+    margin: 0.25em;
+}
+
+.button, .button:visited {
+    cursor: default;
+
+    background: black;
+    color: white;
+
+    padding: 0.3em 0.5em;
+    border: 1px solid white;
+    border-radius: 0.1em;
+
+    transition: 0.15s all linear;
+}
+
+.button:hover {
+    color: #bbb;
+    border-radius: 0.3em;
+}
+
+.button.primary {
+    background: white;
+    color: black;
+}
+
+.button.primary:hover {
+    color: #444;
+    background: #ddd;
+}
+
+.navbar-end {
+    float: right;
+    margin-right: 1em;
+}
+
+
+.container {
+    max-width: 1250px;
+    margin: auto;
+    display: block;
+    /* display: flex; */
+}
+
+.row {
+    display: block;
+    text-align: center;
+    margin: 2em auto;
+}
+
+.col {
+    display: inline;
+    margin: 0.5em;
+}
+
+.copyright h6 {
+    font-weight: 400;
+}
+
+.copyright h6:hover {
+    text-decoration: underline;
+}
