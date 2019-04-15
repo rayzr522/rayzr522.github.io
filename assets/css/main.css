@@ -44,13 +44,12 @@ hr {
     vertical-align: middle;
     display: inline-block;
     margin: 0.4em;
+    z-index: 1;
 }
 
-.navbar-dropdown {
+.navbar-item .navbar-dropdown {
     display: none;
-    position: absolute;
 
-    top: 0em;
     padding: 0em;
 
     background: black;
@@ -60,7 +59,9 @@ hr {
 
 .navbar-item:hover .navbar-dropdown {
     display: block;
+    position: absolute;
     top: 2.75em;
+    opacity: 1;
 }
 
 .navbar-dropdown .navbar-dropdown-item {
