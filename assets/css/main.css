@@ -2,7 +2,7 @@ html {
     background: black;
     color: white;
 
-    font-family: 'Lato', 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Red Hat Text', 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.2em;
 
     padding: 0;
@@ -11,11 +11,13 @@ html {
 body {
     margin: 0;
     padding: 0.5em;
+    text-align: center;
 }
 
 h1 {
     font-size: 1.25em;
     font-weight: 600;
+    font-family: 'Red Hat Display', 'Raleway', 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .title {
@@ -41,37 +43,29 @@ hr {
     margin: 2em auto;
 }
 
-.navbar-item {
-    vertical-align: middle;
-    display: inline-block;
-    margin: 0.4em;
+.navbar {
+    display: block;
     z-index: 1;
+    text-align: center;
+    margin: 0.5em;
 }
 
-.navbar-item .navbar-dropdown {
-    display: none;
-
-    padding: 0em;
-
-    background: black;
-    border: 1px solid white;
-    border-radius: 0.1em;
+.navbar-content {
+    display: inline-block;
 }
 
-.navbar-item:hover .navbar-dropdown {
+.navbar-item {
+    display: inline-block;
+    margin: auto;
+}
+
+.navbar-pulldown {
+    text-align: center;
     display: block;
-    position: absolute;
-    top: 2.75em;
-    opacity: 1;
-}
-
-.navbar-dropdown .navbar-dropdown-item {
-    display: block;
-    margin: 0.25em;
 }
 
 .button, .button:visited {
-    cursor: default;
+    /* cursor: default; */
 
     background: black;
     color: white;
@@ -103,11 +97,11 @@ hr {
     margin-right: 1em;
 }
 
-
 .container {
-    max-width: 1250px;
+    max-width: 900px;
     margin: auto;
-    display: block;
+    display: inline-block;
+    margin: auto 2em;
     /* display: flex; */
 }
 
@@ -130,8 +124,12 @@ hr {
     text-decoration: underline;
 }
 
-@media only screen and (max-width: 550px) {
-    .sm-hidden {
-        display: none;
+@media only screen and (max-width: 615px) {
+    .navbar-content, .navbar-item {
+        display: block;
+    }
+
+    .container {
+        margin: auto 0.5em;
     }
 }

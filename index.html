@@ -11,57 +11,33 @@
     <meta content="https://rayzr.dev/assets/img/icon.png" property="og:image" />
     <meta content="https://rayzr.dev" property="og:url" />
     <meta content="I am a young freelance developer with a passion for programming." property="og:description" />
+    <base target="_blank">
 
     <title>RayzrDev | Home</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display|Red+Hat+Text&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
-    <base target="_blank">
+    <script src="//code.iconify.design/1/1.0.0-rc1/iconify.min.js"></script>
+    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
-    <nav class="navbar">
-        <a class="navbar-item" href="/">
-            <img src="assets/img/icon.png" alt="Home" width="32" height="32">
-        </a>
-        <div class="navbar-item">
-            <a class="button" href="/">
-                Home
-            </a>
+    <div id="nav" class="navbar" style="display:none">
+        <div class="navbar-content">
+            <a class="navbar-item button primary" href="https://rayzr.dev/join">Discord</a>
+            <a class="navbar-item button" href="https://github.com/Rayzr522">GitHub</a>
+            <a class="navbar-item button primary" href="https://youtube.com/Rayzr522">YouTube</a>
+            <a class="navbar-item button" href="https://soundcloud.com/rayzr522">SoundCloud</a>
+            <a class="navbar-item button primary" href="https://patreon.com/rayzr522">Patreon</a>
+            <a class="navbar-item button" href="mailto:rayzr522@gmail.com">Email</a>
         </div>
+    </div>
 
-        <div class="navbar-item">
-            <a class="button" href="#">
-                Links
-            </a>
-            <div class="navbar-dropdown">
-                <a class="navbar-dropdown-item button" href="https://discord.io/rayzrdevofficial">Discord</a>
-                <a class="navbar-dropdown-item button" href="https://github.com/Rayzr522">GitHub</a>
-                <a class="navbar-dropdown-item button" href="https://youtube.com/Rayzr522">YouTube</a>
-                <a class="navbar-dropdown-item button" href="https://soundcloud.com/rayzr522">SoundCloud</a>
-                <a class="navbar-dropdown-item button" href="https://patreon.com/rayzr522">Patreon</a>
-                <a class="navbar-dropdown-item button" href="mailto:rayzr522@gmail.com">Email</a>
-            </div>
-        </div>
-        <div class="navbar-item">
-            <a class="button" href="#">
-                Projects
-            </a>
-            <div class="navbar-dropdown">
-                <a class="navbar-dropdown-item button" href="https://github.com/Rayzr522/DecoHeads">DecoHeads</a>
-                <a class="navbar-dropdown-item button"
-                    href="https://github.com/gvlfm78/BukkitOldCombatMechanics">OldCombatMechanics</a>
-                <a class="navbar-dropdown-item button" href="https://github.com/Rayzr522/odyssey-interactive">Odyssey
-                    Interactive</a>
-            </div>
-        </div>
-        </div>
-
-        <a class="navbar-item navbar-end button primary sm-hidden" href="https://rayzr.dev/join">
-            Chat with me!
-        </a>
-        </div>
-    </nav>
+    <div class="navbar-pulldown animated tada delay-1s">
+        <span class="iconify" data-icon="mdi-expand-more"></span>
+        <span class="iconify" data-icon="mdi-expand-less" style="display:none"></span>
+    </div>
 
     <div class="container">
         <div class="row">
@@ -111,6 +87,8 @@
             <h6>Copyright (c) 2019 Peter Blood</h6>
         </div>
     </div>
+
+    <script src="/assets/js/navbar.js" async></script>
 </body>
 
 </html>
