@@ -129,6 +129,10 @@ hr {
         display: block;
     }
 
+    .navbar-item {
+        margin-top: 0.25em;
+    }
+
     .container {
         margin: auto 0.5em;
     }
