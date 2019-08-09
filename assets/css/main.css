@@ -48,6 +48,14 @@ hr {
     z-index: 1;
     text-align: center;
     margin: 0.5em;
+
+    overflow: hidden;
+    max-height: 0;
+    transition: 0.25s max-height ease-in-out;
+}
+
+.navbar.open {
+    max-height: 75px;
 }
 
 .navbar-content {
@@ -62,6 +70,15 @@ hr {
 .navbar-pulldown {
     text-align: center;
     display: block;
+}
+
+.navbar-pulldown .iconify {
+    transition: 0.25s transform ease-in-out;
+    transform: rotate(0deg) !important;
+}
+
+.navbar-pulldown.open .iconify {
+    transform: rotate(-180deg) !important;
 }
 
 .button, .button:visited {
@@ -135,5 +152,9 @@ hr {
 
     .container {
         margin: auto 0.5em;
+    }
+
+    .navbar.open {
+        max-height: 325px;
     }
 }
