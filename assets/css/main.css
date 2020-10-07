@@ -143,7 +143,7 @@ hr {
     text-decoration: underline;
 }
 
-@media only screen and (max-width: 615px) {
+@media only screen and (max-width: 720px) {
     .navbar-content, .navbar-item {
         display: block;
     }
