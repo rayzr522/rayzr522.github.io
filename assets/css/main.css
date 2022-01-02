@@ -41,12 +41,14 @@ a {
 
 .navbar-item {
     color: white;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    line-height: 0;
+    transition: 250ms filter ease-in-out;
 }
 
-.navbar-item .navbar-item:hover,
+.navbar-item:hover,
 .navbar-item:focus-visible {
-    background: red;
+    filter: drop-shadow(0 0 0.375em rgba(255 255 255 / 0.8));
 }
 
 .hero-image {
